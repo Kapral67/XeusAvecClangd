@@ -3,4 +3,5 @@ set -ex
 
 cd ~
 git clone https://github.com/Kapral67/llvm-project.git
-cp llvm-project/jupyter_notebook_config.py ~/.jupyter/
+jupyter notebook --generate-config
+cp -f llvm-project/jupyter_notebook_config.py ~/.jupyter/
