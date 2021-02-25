@@ -1,5 +1,5 @@
-#!/usr/bin/env bash
-set -eux
+#!/bin/bash
+set -ex
 
 jupyter labextension install --no-build '@krassowski/jupyterlab-lsp@3.4.1'
 jupyter lab build --dev-build=False --minimize=False
