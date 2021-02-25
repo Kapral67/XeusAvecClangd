@@ -1,13 +1,6 @@
 #!/usr/bin/env bash
 set -eux
 
-# Install the labextension
-pushd python_packages/jupyterlab_lsp
-python setup.py sdist bdist_wheel
-python -m pip install -e . --ignore-installed --no-deps -vv
-jupyter labextension develop . --overwrite
-popd
-
 cd ~
 mkdir ~/.jupyter
 wget https://github.com/Kapral67/llvm-project/releases/download/v0.13.1/clangd_13.zip
