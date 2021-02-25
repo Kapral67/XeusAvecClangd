@@ -2,7 +2,7 @@
 set -ex
 
 cd ~
-jupyter notebook --generate-config
+mkdir ~/.jupyter
 wget https://github.com/Kapral67/llvm-project/releases/download/v0.13.1/clangd_13.zip
 7z x clangd_13.zip
 cd ~/.jupyter
