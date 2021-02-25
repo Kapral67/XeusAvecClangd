@@ -8,3 +8,4 @@ wget https://github.com/Kapral67/llvm-project/releases/download/v0.13.1/clangd_1
 cd ~/.jupyter
 cp ~/clangd_13/jupyter_notebook_config.py .
 cd ~
+conda activate xeusAvecClangd
