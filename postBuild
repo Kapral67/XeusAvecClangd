@@ -1,4 +1,3 @@
-#!/bin/bash
 set -ex
 
 invoke environment --env-name=xeusAvecClangd
