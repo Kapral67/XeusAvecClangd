@@ -1,4 +1,3 @@
-name: xeusAvecClangd
 channels:
   - conda-forge
 dependencies:
