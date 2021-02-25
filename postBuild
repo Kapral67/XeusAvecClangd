@@ -5,7 +5,7 @@ jupyter labextension install --no-build '@krassowski/jupyterlab-lsp@3.4.1'
 jupyter lab build --dev-build=False --minimize=False
 
 cd ~
-jupyter notebook --generate-config
+jupyter server --generate-config
 wget https://github.com/Kapral67/llvm-project/releases/download/v0.13.1/clangd_13.zip
 7z x clangd_13.zip
 cd ~/.jupyter
