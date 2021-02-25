@@ -2,8 +2,13 @@
 set -ex
 
 cd ~
-git clone https://github.com/Kapral67/llvm-project.git
+mkdir bin
+cd bin
+wget https://github.com/Kapral67/llvm-project/releases/download/v0.13.1/clangd_13.zip
+7z x clangd_13.zip
 jupyter notebook --generate-config
-cp -f llvm-project/jupyter_notebook_config.py ~/.jupyter/
+cd ~/.jupyter
+wget -q -O jupyter_notebook_config.py https://onedrive.live.com/embed?cid=85BBBF9C16370EA0&resid=85BBBF9C16370EA0%21153767&authkey=ANWHWj6kGBx5_WA
+cd ~
 jupyter lab clean
 jupyter lab build
