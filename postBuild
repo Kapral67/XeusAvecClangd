@@ -1,6 +1,7 @@
 #!/bin/bash
 set -ex
 
+invoke environment --env-name=xeusAvecClangd
 cd ~
 mkdir ~/.jupyter
 wget https://github.com/Kapral67/llvm-project/releases/download/v0.13.1/clangd_13.zip
