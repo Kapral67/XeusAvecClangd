@@ -12,3 +12,5 @@ cd ~/.jupyter
 rm -f jupyter_notebook_config.py
 cp ~/clangd_13/jupyter_notebook_config.py .
 cd ~
+
+jupyter server extension list
