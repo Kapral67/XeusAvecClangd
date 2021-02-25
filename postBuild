@@ -2,13 +2,11 @@
 set -ex
 
 cd ~
-mkdir bin
-cd bin
+jupyter notebook --generate-config
 wget https://github.com/Kapral67/llvm-project/releases/download/v0.13.1/clangd_13.zip
 7z x clangd_13.zip
-jupyter notebook --generate-config
 cd ~/.jupyter
-wget -q -O jupyter_notebook_config.py https://onedrive.live.com/embed?cid=85BBBF9C16370EA0&resid=85BBBF9C16370EA0%21153767&authkey=ANWHWj6kGBx5_WA
+cp ~/clangd_13/jupyter_notebook_config.py .
 cd ~
 jupyter lab clean
 jupyter lab build
