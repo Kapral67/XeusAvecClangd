@@ -6,7 +6,7 @@ dependencies:
   - notebook
   - python>=3.6,<3.9.0a0
   - jupyterlab>=3.0.0,<4.0.0a0
-  - jupyterlab-classic?=0.1.3,<0.2
+  - jupyterlab-classic>=0.1.3,<0.2
   - jupyter_server>=1.1.2
   - nodejs>=12,<15
   - jupyterlab-lsp>=3.4.0
