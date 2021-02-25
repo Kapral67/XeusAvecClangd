@@ -7,3 +7,4 @@ nodejs
 cmake
 zlib1g-dev
 zip
+neofetch
