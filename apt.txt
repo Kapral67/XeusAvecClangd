@@ -4,3 +4,6 @@ p7zip-full
 p7zip-rar
 vim
 nodejs
+cmake
+zlib1g-dev
+zip
