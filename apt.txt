@@ -3,3 +3,4 @@ wget
 p7zip-full
 p7zip-rar
 vim
+nodejs
