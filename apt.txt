@@ -2,3 +2,4 @@ wget
 p7zip-full
 p7zip-rar
 apt-utils
+vim
