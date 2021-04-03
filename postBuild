@@ -6,10 +6,10 @@ jupyter lab build --dev-build=False --minimize=False
 
 cd ~
 
-git clone https://github.com/Kapral67/llvm-project.git
+# git clone https://github.com/Kapral67/llvm-project.git
 
 jupyter lab --generate-config
-wget https://github.com/Kapral67/llvm-project/releases/download/v0.13.1/clangd_13.zip
+wget https://github.com/Kapral67/llvm-project/releases/download/jupyter/clangd_13.zip
 7z x clangd_13.zip
 cd ~/.jupyter
 rm -f jupyter_lab_config.py
