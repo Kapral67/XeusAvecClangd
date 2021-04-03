@@ -34,7 +34,7 @@ mkdir usr
 cd usr
 mkdir include
 cd include
-ln -s /usr/include/c++ c%2B%2B
+ln -s /usr/include/c++/ c%2B%2B
 
 cd ~
 
