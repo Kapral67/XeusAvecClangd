@@ -1,7 +1,7 @@
 # Configuration file for lab.
 import shutil
 
-c.ServerApp.root_dir = '/home/jovyan/examples'
+c.NotebookApp.notebook_dir = '/home/jovyan/examples'
 
 #------------------------------------------------------------------------------
 #   Language Server Implementations
