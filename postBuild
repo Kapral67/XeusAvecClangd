@@ -8,12 +8,14 @@ cd ~
 
 git clone https://github.com/Kapral67/llvm-project.git
 
-jupyter notebook --generate-config
+jupyter lab --generate-config
 wget https://github.com/Kapral67/llvm-project/releases/download/v0.13.1/clangd_13.zip
 7z x clangd_13.zip
 cd ~/.jupyter
-rm -f jupyter_notebook_config.py
-cp ~/clangd_13/jupyter_notebook_config.py .
+rm -f jupyter_lab_config.py
+cp ~/clangd_13/jupyter_lab_config.py .
 cd ~
 
+jupyter serverextension list
 jupyter server extension list
+jupyter labextension list
