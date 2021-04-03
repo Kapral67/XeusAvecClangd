@@ -7,6 +7,8 @@ jupyter lab build --dev-build=False --minimize=False
 
 cd ~
 
+7z x examples.zip
+
 # git clone https://github.com/Kapral67/llvm-project.git
 
 jupyter notebook --generate-config
