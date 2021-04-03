@@ -17,6 +17,7 @@ wget https://github.com/clangd/clangd/releases/download/11.0.0/clangd-linux-11.0
 # cd ~/clangd_13/bin
 cd ~/clangd_11.0.0/bin
 chmod a+x clangd
+./clangd --version
 # echo 'export PATH=$PATH:/home/jovyan/clangd_13/bin/' >> ~/.bashrc
 echo 'export PATH=$PATH:/home/jovyan/clangd_11.0.0/bin/' >> ~/.bashrc
 source ~/.bashrc
@@ -25,7 +26,6 @@ rm -f jupyter_lab_config.py
 mv ~/jupyter_lab_config.py .
 cd ~
 
-clangd --version
 jupyter serverextension list
 jupyter server extension list
 jupyter labextension list
