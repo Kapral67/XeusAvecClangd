@@ -11,11 +11,15 @@ cd ~
 
 jupyter lab --generate-config
 # wget https://github.com/Kapral67/llvm-project/releases/download/jupyter/clangd_13.zip
+wget https://github.com/clangd/clangd/releases/download/11.0.0/clangd-linux-11.0.0.zip
 # 7z x clangd_13.zip
+7z x clangd-linux-11.0.0.zip
 # cd ~/clangd_13/bin
-# chmod a+x clangd
+cd ~/clangd-linux-11.0.0/bin
+chmod a+x clangd
 # echo 'export PATH=$PATH:/home/jovyan/clangd_13/bin/' >> ~/.bashrc
-# source ~/.bashrc
+echo 'export PATH=$PATH:/home/jovyan/clangd-linux-11.0.0/bin/' >> ~/.bashrc
+source ~/.bashrc
 cd ~/.jupyter
 rm -f jupyter_lab_config.py
 mv ~/jupyter_lab_config.py .
