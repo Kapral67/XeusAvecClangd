@@ -7,5 +7,4 @@ vim
 cmake
 zlib1g-dev
 zip
-clangd
 neofetch
