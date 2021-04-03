@@ -1,7 +1,11 @@
-# Configuration file for lab.
+# for clangd
 import shutil
 
+# Jupyter root directory
 c.NotebookApp.notebook_dir = '/home/jovyan/examples'
+
+# Allow Hidden Files
+c.ContentsManager.allow_hidden = True
 
 #------------------------------------------------------------------------------
 #   Language Server Implementations
