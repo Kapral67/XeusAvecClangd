@@ -30,7 +30,11 @@ cd ~/examples
 mkdir .lsp_symlink
 cd .lsp_symlink
 ln -s /home home
-ln -s /usr usr
+mkdir usr
+cd usr
+mkdir include
+cd include
+ln -s /usr/include/c++ c%2B%2B
 
 cd ~
 
