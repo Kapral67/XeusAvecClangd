@@ -26,6 +26,11 @@ source ~/.bashrc
 cd ~/.jupyter
 rm -f jupyter_notebook_config.py
 mv ~/jupyter_notebook_config.py .
+cd ~/examples
+mkdir .lsp_symlink
+ln -s /home home
+ln -s /usr usr
+
 cd ~
 
 jupyter serverextension list
