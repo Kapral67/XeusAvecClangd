@@ -10,7 +10,7 @@ Xeus-Cling jupyter kernel with llvm-project clangd running in jupyter-lsp extens
  - open a `.cpp` file and familiar jupyterlab-lsp functions will work (hover, jump, rename, etc.)
  - this only works with native files and does not work in this binder with `.ipynb` files yet. **See Below for more details**
 
-# Notebooks not working
+### Notebooks not working
 - clangd does not recognize `.ipynb` files as C++ files
 - [this](https://github.com/Kapral67/llvm-project/commit/c972f366a8a7fa61b56b3045f15c25d3ff353e1d) hack can be used to fix this issue
 - The problem is that this means the source code must be compiled manually into a binary.
