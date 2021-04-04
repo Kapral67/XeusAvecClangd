@@ -3,6 +3,10 @@ Xeus-Cling jupyter kernel with llvm-project clangd running in jupyter-lsp extens
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/Kapral67/XeusAvecClangd.git/HEAD?urlpath=lab)
 
+## Jump
+- Under `Conventional`, open `main.cpp` got to line 49 and try jump on `substr` ([alt or option] + left_click)
+- Jump also works on the functions defined by the `.h` files in the `Conventional` folder.
+
 
 ## Updates (4/3/2021)
  - LSP is working in binder now
