@@ -35,6 +35,17 @@ cd usr
 mkdir include
 cd include
 ln -s /usr/include/c++/ c%2B%2B
+mkdir -p x86_64-linux-gnu/c%2B%2B/7/bits/
+cd x86_64-linux-gnu/c%2B%2B/7/bits/
+ln -s /usr/include/c++/x86_64-linux-gnu/c++/7/bits/c++allocator.h c%2B%2Ballocator.h
+ln -s /usr/include/c++/x86_64-linux-gnu/c++/7/bits/c++config.h c%2B%2Bconfig.h
+ln -s /usr/include/c++/x86_64-linux-gnu/c++/7/bits/c++io.h c%2B%2Bio.h
+ln -s /usr/include/c++/x86_64-linux-gnu/c++/7/bits/c++locale.h c%2B%2Blocale.h
+ln -s /usr/include/c++/x86_64-linux-gnu/c++/7/bits/extc++.h extc%2B%2B.h
+ln -s /usr/include/c++/x86_64-linux-gnu/c++/7/bits/stdc++.h stdc%2B%2B.h
+ln -s /usr/include/c++/x86_64-linux-gnu/c++/7/bits/stdtr1c++.h stdtr1c%2B%2B.h
+cd ..
+ln -s /usr/include/c++/x86_64-linux-gnu/c++/7/ext/ ext
 
 cd ~
 
