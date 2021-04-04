@@ -37,6 +37,8 @@ cd include
 ln -s /usr/include/c++/ c%2B%2B
 mkdir -p x86_64-linux-gnu/c%2B%2B/7/bits/
 cd x86_64-linux-gnu/c%2B%2B/7/bits/
+cp -s /usr/include/x86_64-linux-gnu/c++/7/bits/*.h .
+rm *+*.h
 ln -s /usr/include/x86_64-linux-gnu/c++/7/bits/c++allocator.h c%2B%2Ballocator.h
 ln -s /usr/include/x86_64-linux-gnu/c++/7/bits/c++config.h c%2B%2Bconfig.h
 ln -s /usr/include/x86_64-linux-gnu/c++/7/bits/c++io.h c%2B%2Bio.h
