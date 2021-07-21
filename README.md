@@ -8,7 +8,7 @@ Xeus-Cling jupyter kernel with llvm-project clangd running in jupyter-lsp extens
 - Jump also works on the functions defined by the `.h` files in the `Conventional` folder.
 
 ## Updates (5/14/2021)
- - Adding a `command_flags.txt` file should allow clangd to work for xeus-cling `.ipynb` files without a custom compiled clang-tools-extra as described below
+ - Adding a `compile_flags.txt` file should allow clangd to work for xeus-cling `.ipynb` files without a custom compiled clang-tools-extra as described below
   - Put the compile flag `-xc++`
   - Example file:
   ```
