@@ -1,10 +1,6 @@
-apt-utils
 libc6
 wget
 p7zip-full
-p7zip-rar
 vim
-cmake
-zlib1g-dev
 zip
 neofetch
