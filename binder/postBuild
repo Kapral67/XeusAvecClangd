@@ -2,7 +2,7 @@
 set -ex
 
 # jupyter labextension install --no-build '@krassowski/jupyterlab-lsp@3.5.0'
-pip install jupyterlab-lsp==3.5.0
+pip install jupyterlab-lsp==3.8.1 jupyter-lsp==1.4.1
 jupyter lab build --dev-build=False --minimize=False
 
 cd ~
