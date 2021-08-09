@@ -14,10 +14,10 @@ cd ~
 jupyter notebook --generate-config
 wget https://github.com/Kapral67/llvm-project1/releases/download/llvmorg-12.0.0/clangd.7z
 7z x clangd.zip
-# cd ~/clangd_11.0.0/bin
+cd ~/llvm-project/build/bin
 chmod a+x clangd
 ./clangd --version
-# echo 'export PATH=$PATH:/home/jovyan/clangd_11.0.0/bin/' >> ~/.bashrc
+echo 'export PATH=$PATH:/home/jovyan/llvm-project/build/bin/' >> ~/.bashrc
 source ~/.bashrc
 cd ~/.jupyter
 rm -f jupyter_notebook_config.py
