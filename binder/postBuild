@@ -13,7 +13,7 @@ cd ~
 
 jupyter notebook --generate-config
 wget https://github.com/Kapral67/llvm-project1/releases/download/llvmorg-12.0.0/clangd.7z
-7z x clangd.zip
+7z x clangd.7z
 cd ~/llvm-project/build/bin
 chmod a+x clangd
 ./clangd --version
