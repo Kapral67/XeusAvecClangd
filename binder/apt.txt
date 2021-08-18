@@ -4,4 +4,3 @@ p7zip-full
 vim
 zip
 neofetch
-sudo
