@@ -14,7 +14,7 @@ c.ContentsManager.allow_hidden = True
 c.LanguageServerManager.language_servers = {
     "clangd": {
         # if installed as a binary
-        "argv": [shutil.which("clangd", path="/home/jovyan/llvm-project/build/bin/"), "-pretty", "--clang-tidy", "--clang-tidy-checks='modernize*, readability*, performance*, bugprone*, cppcoreguidelines*'", "--completion-style=detailed", "--suggest-missing-includes", "--pch-storage=memory", "--log=verbose"],
+        "argv": [shutil.which("clangd", path="/home/jovyan/out/data/build/bin/"), "-pretty", "--clang-tidy", "--clang-tidy-checks='modernize*, readability*, performance*, bugprone*, cppcoreguidelines*'", "--completion-style=detailed", "--suggest-missing-includes", "--pch-storage=memory", "--log=verbose"],
         "languages": ["c++src", "csrc"],
         "version": 2
     }
