@@ -46,7 +46,7 @@ ln -s /usr/include/x86_64-linux-gnu/c++/7/ext/ ext
 
 # TEST #
 cd /usr/lib
-ln -s ./x86_64-linux-gnu/libtinfo.so libtinfo.so.6
+sudo ln -s ./x86_64-linux-gnu/libtinfo.so libtinfo.so.6
 
 cd ~
 
