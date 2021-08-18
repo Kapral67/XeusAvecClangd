@@ -9,15 +9,14 @@ cd ~
 
 7z x examples.zip
 
-# git clone https://github.com/Kapral67/llvm-project.git
-
 jupyter notebook --generate-config
-wget https://github.com/Kapral67/llvm-project1/releases/download/llvmorg-12.0.0/clangd.7z
-7z x clangd.7z
-cd ~/llvm-project/build/bin
-chmod a+x clangd
-./clangd --version
-echo 'export PATH=$PATH:/home/jovyan/llvm-project/build/bin/' >> ~/.bashrc
+wget https://github.com/Kapral67/Cling-Clangd/releases/download/amd64/jupyter-clangd.x86_64.tar.gz #wget https://github.com/Kapral67/llvm-project1/releases/download/llvmorg-12.0.0/clangd.7z
+7z x jupyter-clangd.x86_64.tar.gz #7z x clangd.7z
+7z x jupyter-clangd.x86_64.tar
+#cd ~/llvm-project/build/bin
+chmod a+x ~/out/data/build/bin/clangd
+#./clangd --version
+echo 'export PATH=$PATH:/home/jovyan/out/data/build/bin/' >> ~/.bashrc #echo 'export PATH=$PATH:/home/jovyan/llvm-project/build/bin/' >> ~/.bashrc
 source ~/.bashrc
 cd ~/.jupyter
 rm -f jupyter_notebook_config.py
