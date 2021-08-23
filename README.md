@@ -1,26 +1,26 @@
 # XeusAvecClangd
-Xeus-Cling jupyter kernel with llvm-project clangd running in jupyter-lsp extension to support language server protocol functions.
+
+Xeus-Cling jupyter kernel with llvm-project clangd running in jupyter-lsp extension to support language server protocol functions. This project allows for Language Server Protocol functions not only to operate in `.cpp` files, but also `.ipynb` files when loaded with the **xeus-cling C++ kernel**.
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/Kapral67/XeusAvecClangd.git/HEAD?urlpath=lab)
 
-## Jump
-- Under `Conventional`, open `main.cpp` go to line 49 and try jump on `substr` ([alt or option] + left_click)
-- Jump also works on the functions defined by the `.h` files in the `Conventional` folder.
+*<sub>Note: Commits/Tags/Pushes/Etc. must be signed starting 8/22/2021. Verified status may not be indefinite as certificates expire.</sub>*
 
-## Updates (5/14/2021)
- - Adding a `compile_flags.txt` file should allow clangd to work for regular files (not notebooks)
-  - Put the compile flag `-xc++`
+## Usage
+  - Adding a `compile_flags.txt` file allows further configuration of clangd.
+  
   - Example file:
-  ```
+
+```
   -xc++
   -Weverything
-  ```
+```
 
-## Updates (4/3/2021)
- - LSP is working in binder now
- - Go to `examples/conventional`
- - open a `.cpp` file and familiar jupyterlab-lsp functions will work (hover, jump, rename, etc.)
- - this only works with native files and does not work in this binder with `.ipynb` files yet. **See Below for more details**
-
-### Notebooks Working! Update (8/9/2021)
-- 
+  - Refer [here](https://clangd.llvm.org/design/compile-commands) for more detailed usage on `compile_flags.txt` & `compile_commands.json` files.
+  
+  - Clangd also accepts flags when executed as a binary. Refer to the **Language Server Implementations** section of `jupyter_notebook_config.py` to see which arguments are passed in this project.
+  
+## The Clangd Executable
+  - Clangd must be recompiled for it to work properly with `.ipynb` files
+  
+  - A compiled binary built on **Ubuntu:Bionic_x86-64 (amd64)** can be found [here](https://github.com/Kapral67/Cling-Clangd.git).
