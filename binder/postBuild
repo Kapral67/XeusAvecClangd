@@ -12,9 +12,9 @@ jupyter notebook --generate-config
 wget https://github.com/Kapral67/Cling-Clangd/releases/download/amd64-dev/xeus-clangd.12.0.1.x86_64.tar.gz
 tar -zxf xeus-clangd.12.0.1.x86_64.tar.gz
 
-chmod a+x ~/xeus-clangd.12.0.1.x86_64/build/bin/clangd
+chmod a+x ~/build/bin/clangd
 
-echo 'export PATH=$PATH:/home/jovyan/xeus-clangd.12.0.1.x86_64/build/bin/' >> ~/.bashrc
+echo 'export PATH=$PATH:/home/jovyan/build/bin/' >> ~/.bashrc
 source ~/.bashrc
 cd ~/.jupyter
 rm -f jupyter_notebook_config.py
